@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='qrcodegenerator/result.css') }}">
+
+  <title>QR Code Result</title>
+</head>
+<body>
+  <div>
+    <h1>Generated QR Code</h1>
+    <img src="{{ qrcode_path }}" alt="QR Code" style="width: 300px; height: 300px;">
+    <br>
+    <a href="/">Generate Another QR Code</a>
+  </div>
+</body>
+</html>

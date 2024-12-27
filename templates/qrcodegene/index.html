@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='qrcodegenerator/index.css') }}">
+
+  <title>QR Code Generator</title>
+</head>
+<body>
+  <div>
+    <h1>QR Code Generator</h1>
+    <form action="/generate" method="POST">
+      <label for="input">Enter URL/Text:</label><br>
+      <input type="text" id="input" name="input" placeholder="Enter URL or Text" required><br>
+
+      <label for="size">QR Code Box Size:</label><br>
+      <input type="number" id="size" name="size" value="12"><br>
+
+      <label for="border">Border Size:</label><br>
+      <input type="number" id="border" name="border" value="3"><br>
+
+      <label for="outputpath">Output File Name (e.g., qrcode.jpg):</label><br>
+      <input type="text" id="outputpath" name="outputpath" placeholder="qrcode.jpg" required><br>
+
+      <button type="submit">Generate QR Code</button>
+    </form>
+  </div>
+</body>
+</html>
+ 
+
+<!-- The action attribute in an HTML <form> specifies the URL to which the form data is sent when the form is submitted. When you specify action="/generate", it directs the browser to send the form data to the /generate route of your Flask application -->
