@@ -1,21 +1,20 @@
-#QR Code Generator Flask Application
+# QR CODE GENERATOR FLASK APPLICATION
 
 A simple Flask-based web application that allows users to generate QR codes from text or URLs. The application also supports customization of QR code size, border thickness, and file name.
 
-#Features
+## FEATURES
 
-QR Code Generation: Create QR codes from user input (URL or text).
+- **QR CODE GENERATION:**
+   Create QR codes from user input (URL or text).
+- **CUSTOMIZATION:**
+   Choose the QR code's box size, border size, and output filename.
+- **REAL-TIME DISPLAY:**
+   View the generated QR code immediately on the result page.
+- **ORGANIZED STRUCTURE:**
+   Automatically saves QR codes in a dedicated folder.
 
-Customization: Choose the QR code's box size, border size, and output filename.
+## PREREQUISITES
 
-Real-time Display: View the generated QR code immediately on the result page.
-
-Organized Structure: Automatically saves QR codes in a dedicated folder.
-
-#Prerequisites
-
-Python (3.x)
-
-Flask library
-
-qrcode library
+- **Python** (3.x)
+- **Flask** library
+- **qrcode** library
